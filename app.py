@@ -3,6 +3,9 @@ from flask import Flask,request,app,jsonify,url_for,render_template
 import numpy as np
 import pandas as pd
 
+
+
+
 app=Flask(__name__)
 #load the model
 model=pickle.load(open('forecast_model.pkl','rb'))
@@ -25,10 +28,12 @@ def predict_api():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-    data=[float(x) for x in request.form.values()]
+    data=[int(x) for x in request.form.values()]
+    print(data)
     final_input=scalar.transform(np.array(data).reshape(1,-1))
     print(final_input)
     output=model.predict(final_input)[0]
+    print(output)
 
     return render_template("home.html",prediction_text="The prediction is {}".format(output))
 

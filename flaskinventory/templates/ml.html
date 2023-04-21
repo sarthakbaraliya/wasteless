@@ -23,18 +23,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="/about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="developers.html">Contact Us</a>
+              <a class="nav-link" href="/contact">Contact Us</a>
             </li>
             
   
           </ul>
-          <a class="navbar-brand" href="#">WasteLess</a>
+          <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='WasteLess-removebg-preview.png') }}" width="100%" height="30" alt=""></a>
         </div>
       </div>
     </nav>
@@ -62,7 +62,7 @@
         <form class="needs-validation" novalidate>
           <div class="form-row">
             <div class="col-md-6 mb-3">
-              <label for="validationCustom01"><b>Store</b></label>
+              <label for="validationCustom01"><b>Store No. : </b></label>
               
               <input type="text" name="store" id="store" 
               
@@ -72,7 +72,7 @@
               </div>
             </div>
             <div class="col-md-6 mb-3">
-              <label for="validationCustom02"><b>Item</b></label>
+              <label for="validationCustom02"><b>Number of Items : </b></label>
               
               <input type="text" name="item" id="item" 
               
@@ -83,7 +83,7 @@
             </div>
           </div>
           <div class="col-md-3 mb-3">
-            <label for="validationCustom05"><b>day</b></label>
+            <label for="validationCustom05"><b>Day : </b></label>
            
             <input type="text" name="day" id="day" class="form-control" 
             
@@ -93,21 +93,23 @@
             </div>
           </div>
           <div class="col-md-3 mb-3">
-            <label for="validationCustom05"><b>Month</b></label>
+            <label for="validationCustom05"><b>Month : </b></label>
             <input type="text" name="month" id="month" class="form-control" required>
             <div class="invalid-feedback">
               Please provide a valid zip.
             </div>
           </div>
           <div class="col-md-3 mb-3">
-            <label for="validationCustom05"><b>Weekend</b></label>
+            <label for="validationCustom05"><b>Weekend (1 for weekend 0 for Normal days) : </b></label>
             <input type="text" name="weekend" id="weekend" class="form-control" required>
             <div class="invalid-feedback">
               Please provide a valid zip.
             </div>
           </div>
           <div class="sub">
-            <button type="button" input type="submit" value="Submit" class="btn btn-outline-primary">submit</button>
+            <button input type="submit" value="Submit" class="btn btn-outline-primary">
+              Submit
+            </button>
           </div>
           
           

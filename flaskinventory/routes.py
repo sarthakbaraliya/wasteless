@@ -238,7 +238,7 @@ model=pickle.load(open('forecast_model.pkl','rb'))
 scalar=pickle.load(open('scaling.pkl','rb'))
 @app.route('/predictionform')
 def home():
-   return render_template('home.html')
+   return render_template('ml.html')
 
 @app.route('/predict_api',methods=['POST'])
 
@@ -257,7 +257,20 @@ def predict():
     final_input=scalar.transform(np.array(data).reshape(1,-1))
     print(final_input)
     output=model.predict(final_input)[0]
-    return render_template("home.html",prediction_text="The prediction is {}".format(round(output)))
+    return render_template("ml.html",prediction_text="The prediction is {}".format(round(output)))
+
+@app.route('/about')
+def about():
+    return render_template("about.html")
+
+@app.route('/contact')
+def contact():
+    return render_template("contact.html")
+
+@app.route('/wm')
+def wm():
+    return render_template("Waste_Management.html")
+
 
 
 # if __name__=="__main__":

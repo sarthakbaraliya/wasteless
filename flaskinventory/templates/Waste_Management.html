@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WasteLess</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </li>
+
+
+                </ul>
+                <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='WasteLess-removebg-preview.png') }}" width="100%" height="30" alt=""></a>
+            </div>
+        </div>
+    </nav>
+    <!-- ============================================================================== -->
+
+    <!-- <div class="class mx-4 my-2">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Let's Go WasteLess! <span class="text-muted">Mission Zero Waste.</span>
+                </h2>
+                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam tempore repudiandae
+                    esse animi nemo odit nostrum. Deserunt omnis, cum sint dolorum esse similique eos ipsum dolor
+                    exercitationem ab est obcaecati nemo consequatur excepturi, ut unde magni ex aperiam nisi animi
+                    quidem laborum aliquam. Maiores natus alias iure ad quas. In impedit placeat consequuntur. Dolore,
+                    deserunt. Ullam fugiat sed dolor tempore veritatis perferendis sapiente nostrum officia voluptas
+                    dolorem placeat enim obcaecati molestiae earum laborum iure accusamus fuga, quaerat cum iste
+                    repellat vel non modi. Voluptates nostrum excepturi rerum repellat at quod autem harum, impedit
+                    recusandae illum perspiciatis cupiditate eligendi reprehenderit quas?</p>
+            </div>
+            <div class="col-md-5">
+                <img src="waste1.avif" width="500" height="500" alt="">
+
+
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- ====================================================================== -->
+
+    <!-- <div class="class my-2 mx-4">
+        <h4>There are several NGOs and organizations in Pune that are working on food waste management. Here are
+            a few options:</h4>
+        <p class="lead">
+           <b>Swach Pune</b>  - This organization works towards creating a waste-free and clean city. They have various
+            initiatives that include food waste management.
+        </p>
+        <a href="https://swachpune.wixsite.com/swachpune">
+            <button type="button" class="btn btn-outline-primary">Swach Pune</button>
+        </a>
+    </div> -->
+
+
+    <!-- ====================================================================== -->
+
+    <style>
+      .heading1 {
+          color: rgb(87, 196, 226);
+      }
+
+      .heading2 {
+          color: rgb(74, 74, 187);
+      }
+
+      .heading3 {
+          color: green;
+      }
+    </style>
+    <div class="class mx-4 my-2">
+    
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="heading1">How long can restaurants keep food? <span class="text-muted"></span></h2>
+          <p>In many parts of the world, there are strict food safety laws which mean that edible food cannot be sold after being cooked. Particularly with meat products, there are health concerns over products that are not in temperature controlled and hygienic environments. For example, in the UK, pizza chains serving buffet style pizza are only allowed a matter of minutes before they have to discard any leftover slices</p>
+          <p>
+            In our homes, there is much we can do to in reducing food waste in our homes. We throw away kilos of fruit and vegetables, and other types of edible food. This is particularly true in the developed world where food is relatively cheap, and there is constant accessibility to food. 
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img src="{{ url_for('static', filename='vegetables.png') }}" width="500" height="350" alt="">
+          
+    
+        </div>
+      </div>
+    </div>
+
+    <div class="class mx-4 my-2">
+      <div class="class mx-4 my-2">
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="heading2">What can restaurants do with leftover food?<span class="text-muted"></span></h2>
+            <p>For any food that is not sold, such as sandwiches or bakery items, companies can use secondary markets like Too Good To Go to resell the food to the public at a lower price. One example is Accor Hotels who have partnered with the app to save more than 10,000 meals. </p>
+            <p>
+              If restaurants do not sell the remaining food, they can either donate to food banks and either look at anaerobic digestion or a composting program. Read this blog on 5 tips where you can donate leftover food, including food banks and other community food programs. There are also many companies stepping up in times in need, as shown in our Hospitality heroes blog here.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="img1" src="{{ url_for('static', filename='Chhole (1).png') }}" width="500" height="350" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="class mx-4 my-2">
+        <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-warning">NGOs</strong>
+                  <h3 class="mb-0">Swach Pune</h3>
+                  <div class="mb-1 text-muted"></div>
+                  <p class="card-text mb-auto">This organization works towards creating a waste-free and clean city. They have various
+                    initiatives that include food waste management.</p>
+                  <!-- <a href="https://swachpune.wixsite.com/swachpune" class="stretched-link">Contact here</a> -->
+                  <a href="https://swachcoop.com/">
+                    <button type="button" class="btn btn-outline-warning">Contact here</button>
+                  </a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                  <img src="{{ url_for('static', filename='Swaccha_pune.jpeg') }}" width="250" height="250" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-danger">NGos</strong>
+                  <h3 class="mb-0">Annadata</h3>
+                  <div class="mb-1 text-muted"></div>
+                  <p class="mb-auto">Annadata is an NGO that collects excess food from events and distributes it to the needy.</p>
+                  <!-- <a href=" https://www.annadatango.org/" class="stretched-link">Contact here</a> -->
+                  <a href="https://www.annadatatrust.com/">
+                    <button type="button" class="btn btn-outline-danger">Contact here</button>
+                  </a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <img src="{{ url_for('static', filename='AnnadataLogo.jpg') }}" width="250" height="250" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="class mx-4 my-2">
+        <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-secondary">NGOs</strong>
+                  <h3 class="mb-0">Feeding India</h3>
+                  <div class="mb-1 text-muted"></div>
+                  <p class="card-text mb-auto">Feeding India is a food recovery organization that collects excess food from events and restaurants and distributes it to the needy.</p>
+                  <!-- <a href="https://www.feedingindia.org/" class="stretched-link">Contact here</a> -->
+                  <a href="https://www.feedingindia.org/">
+                    <button type="button" class="btn btn-outline-secondary">Contact here</button>
+                  </a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                  <img src="{{ url_for('static', filename='download.png') }}" width="250" height="250" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-success">NGos</strong>
+                  <h3 class="mb-0">The Robin Hood Army</h3>
+                  <div class="mb-1 text-muted"></div>
+                  <p class="mb-auto">This organization collects excess food from restaurants and distributes it to the needy.</p>
+                  <!-- <a href="https://robinhoodarmy.com/" class="stretched-link">Contact here</a> -->
+                  <a href="https://robinhoodarmy.com/">
+                    <button type="button" class="btn btn-outline-success">Contact here</button>
+                  </a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                  <img src="{{ url_for('static', filename='Robin_Hood_Army.png') }}" width="250" height="250" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+</body>
+
+</html>
