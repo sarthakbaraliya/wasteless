@@ -6,7 +6,7 @@ DateTime==5.1
 Flask==2.2.4
 Flask-SQLAlchemy==3.0.3
 Flask-WTF==1.1.1
-fonttools==4.40.0
+fonttools==4.38.0
 greenlet==2.0.2
 itsdangerous==2.1.2
 Jinja2==3.1.2
